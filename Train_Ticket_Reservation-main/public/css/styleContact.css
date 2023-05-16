@@ -1,0 +1,91 @@
+
+
+
+/** section contact **/
+#contact {
+   display: grid;
+   justify-items: center;
+   padding-top: 150px;
+   padding-bottom: 123px;
+   position: relative;
+}
+#contact h1 {
+   color: red;
+   font-size: 30px;
+}
+.contact {
+   width: 1280px;
+   padding-left: 20px;
+   padding-right: 20px;
+   display: grid;
+   grid-template-columns: repeat(2, minmax(100px, 1fr));
+   grid-gap: 20px;
+}
+.contact-information {
+   display: grid;
+}
+.contact-information h4 {
+   color: red;
+   text-size-adjust: 25px;
+   /* text-decoration: underline; */
+}
+.contact-information h4 span {
+   color: blue;
+   /* text-decoration: none; */
+}
+.contact-form textarea{
+   height: 100px;
+}
+.contact-form {
+   display: grid;
+   grid-gap: 20px;
+}
+.contact-form input {
+   outline: none;
+   border: 3px solid blue;
+   /* padding-left: 10px; */
+   padding: 10px;
+  
+}
+.contact-form input:focus {
+   border: 3px solid blue;
+}
+#message {
+   outline: none;
+   border: 3px solid blue;
+   /* padding-left: 10px; */
+   padding: 10px;
+}
+#message:focus {
+   border: 3px solid blue;
+}
+#btn-contact-form {
+   position: relative;
+   outline: none;
+   border: none;
+   background: blue;
+   cursor: pointer;
+   font-weight: 600;
+   padding: 20px;
+}
+#btn-contact-form::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 0;
+   background: red;
+   transition: all ease-in-out 500ms;
+}
+#btn-contact-form:hover::before {
+   width: 100%;    
+   background: red;
+}
+#btn-contact-form span {
+   position: relative;
+   transition: all ease-in-out 1s;
+}
+#btn-contact-form:hover span {
+   color: blue;
+}

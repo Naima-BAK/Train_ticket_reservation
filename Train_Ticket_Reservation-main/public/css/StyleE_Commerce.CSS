@@ -1,0 +1,171 @@
+ *{
+ 	margin: 0;
+  }
+ /* }
+ .load{
+     animation:  slide 2s;
+ }
+ .slider{
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 30s infinite;
+ }
+ .content{
+ 	color: #fff;
+ 	width: 100%;
+ 	height: 100vh;
+ 	background-color: rgba(0, 0, 0, 0.5);
+ }
+ .principal{
+ 	left: 50%;
+ 	top: 50%;
+ 	transform: translate(-50%,-50%);
+    position: absolute;
+    letter-spacing: 5px;
+    height: 100%;
+    width: 100vh;
+ }
+ .principal h1{
+   font-size: 70px;
+   text-align: center;
+   margin: auto;
+   color: purple;
+   margin-top: 250px;
+ }
+ .principal h2{
+   font-size: 20px;
+   color: #ffc107;
+
+ }
+ @keyframes slide{
+    0%{
+         background-image: url('https://img1.freepng.fr/20180528/tgx/kisspng-blazer-pant-suits-pants-tuxedo-business-attire-for-women-5b0c13854ef288.6526344315275180853234.jpg');
+       }
+    20%{
+         background-image: url('https://img1.freepng.fr/20180528/xga/kisspng-constance-l-rice-lawyer-law-firm-criminal-law-business-attire-for-women-5b0bf183780869.4086340715275093794917.jpg');
+       }
+    20.01%{
+         background-image: url('https://img1.freepng.fr/20180706/fu/kisspng-blouse-sleeve-pants-dress-shirt-corporate-attire-women-5b3f2c2d101c13.562658821530866733066.jpg');
+       }
+    40%{
+         background-image: url('https://img1.freepng.fr/20180528/rqb/kisspng-waistcoat-jacket-fashion-shirt-business-attire-for-women-5b0bc663e48c25.3722017015274983399361.jpg');
+       }
+    40.01%{
+         background-image: url('https://img1.freepng.fr/20180804/kzj/kisspng-distillation-alembic-stainless-steel-steam-cryptoc-standing-women-png-image-purepng-free-transparen-5b66260deade86.415119911533421069962.jpg');
+       }
+    60%{
+         background-image: url('https://img1.freepng.fr/20180621/fyw/kisspng-blazer-nappa-leather-stx-it20-risk-5rv-nr-eo-fur-f-business-attire-for-women-5b2b42fe2919e2.3927705915295618541684.jpg');
+       }
+    60.01%{
+         background-image: url('https://img1.freepng.fr/20180720/wai/kisspng-tuxedo-m-blazer-sleeve-corporate-attire-for-women-5b5190be347373.4903842415320721262148.jpg');
+       }
+    80%{
+         background-image: url('https://img1.freepng.fr/20180715/hjh/kisspng-businessperson-small-business-virtual-assistant-st-formal-attire-female-5b4baf63b0ef38.0846514115316867557247.jpg');
+       }
+    80.01%{
+         background-image: url('https://img1.freepng.fr/20180528/i/kisspng-party-dress-clothing-evening-gown-dinner-dress-business-attire-for-women-5b0bc665d85f82.6087871515274983418863.jpg');
+       }
+    100%{
+         background-image: url('https://img1.freepng.fr/20180528/xga/kisspng-constance-l-rice-lawyer-law-firm-criminal-law-business-attire-for-women-5b0bf183780869.4086340715275093794917.jpg');
+       }
+ } */
+
+
+
+/** section contact **/
+#contact {
+    display: grid;
+    justify-items: center;
+    background: black;
+    /* padding-top: 50px; */
+    /* margin-bottom: 1000px; */
+    position: relative;
+}
+#contact h1 {
+    color: palevioletred;
+}
+.contact {
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-gap: 20px;
+}
+.contact-information {
+    display: grid;
+}
+.contact-information h4 {
+    color: purple;
+    text-size-adjust: 25px;
+    /* text-decoration: underline; */
+}
+.contact-information h4 span {
+    color: #ffc107;
+    /* text-decoration: none; */
+}
+.contact-form {
+    display: grid;
+    grid-gap: 20px;
+}
+.contact-form input {
+    outline: none;
+    border: 3px solid #ffc107;
+    /* padding-left: 10px; */
+    padding: 10px;
+}
+.contact-form input:focus {
+    border: 3px solid #ffc107;
+}
+#message {
+    outline: none;
+    border: 3px solid #ffc107;
+    /* padding-left: 10px; */
+    padding: 10px;
+}
+#message:focus {
+    border: 3px solid #ffc107;
+}
+#btn-contact-form {
+    position: relative;
+    outline: none;
+    border: none;
+    background: #ffc107;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 20px;
+}
+#btn-contact-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: palevioletred;
+    transition: all ease-in-out 500ms;
+}
+#btn-contact-form:hover::before {
+    width: 100%;    
+    background: purple;
+}
+#btn-contact-form span {
+    position: relative;
+    transition: all ease-in-out 1s;
+}
+#btn-contact-form:hover span {
+    color: #ffc107;
+}
+
+/* body{
+    background-image: url('https://getwallpapers.com/wallpaper/small-retina/f/e/5/60113.jpg');
+} */
+  
+  
+  /* form
+  {
+      text-align: center;
+  }  */
