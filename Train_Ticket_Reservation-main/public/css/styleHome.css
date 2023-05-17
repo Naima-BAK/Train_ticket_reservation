@@ -1,0 +1,127 @@
+
+       #slider{
+        overflow: hidden;
+    }
+        #slider figure{
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider infinite;
+    }
+        #slider figure img{
+        float: left;
+        width: 20%;
+       
+    }
+    img{
+    
+     width: 100px;
+     height: 500px;
+    }
+       @keyframes slider{
+        0%{
+            left: 0;
+        }
+        20%{
+            left: 0;
+        }
+        25%{
+            left: -100%;
+        }
+        45%{
+            left: -100%;
+        }
+        50%{
+            left: -200%;
+        }
+        70%{
+            left: -200%;
+        }
+        75%{
+            left: -300%;
+        }
+        95%{
+            left: -300%;
+        }
+        100%{
+            left: -400%;
+        }
+    }
+ 
+ /** section reservation **/
+ input,select{
+     color: white;
+ }
+ #reservation {
+   
+     position: -webkit-sticky;
+     top: 47px;
+ 
+     background: #0738a3;
+     width: 1200px;
+     padding: 10px 0px;
+     z-index: 100;
+ }
+ .form-reservation {
+     width: 1200px;
+     margin: auto;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+     grid-gap: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+ .form-reservation input, select {
+     outline: none;
+     border: 3px solid rgb(61, 207, 218);
+     padding: 3px;
+     background: none;
+ }
+ .form-reservation input:focus, select:focus {
+     border: 2px solid blue;
+ }
+ select{
+     background-color: #0738a3;
+ }
+ .form-reservation input::placeholder {
+     color: white;
+ }
+ #r-btn-submit {
+     outline: none;
+     border: none;
+     padding: 3px;
+     background:red;
+     cursor: pointer;
+     position: relative;
+     
+ }
+ #r-btn-submit::before {
+     content: '';
+     display: block;
+     height: 100%;
+     background: rgb(61, 207, 218);
+     color: #0738a3;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     top: 0;
+     transform-origin: left;
+     transform: scale(0, 1);
+     transition: transform ease-in-out 500ms;
+ }
+ #r-btn-submit:hover::before {
+     transform: scale(1,1);
+ }
+ #r-btn-submit b {
+     color: white;
+     position: relative;
+     transition: all ease-in-out 1s;
+ }
+ #r-btn-submit:hover b {
+     color:#0738a3;
+ }
+ 
+ 
+ 
